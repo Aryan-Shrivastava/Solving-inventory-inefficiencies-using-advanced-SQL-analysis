@@ -1,0 +1,60 @@
+Executive Summary: Inventory KPI Analysis and Optimization
+
+Objective
+
+The goal of this project was to analyze inventory data from various retail stores to identify inefficiencies and improve stock management. By leveraging SQL queries and trend-based analytics, we generated actionable insights using key performance indicators (KPIs) such as stockout rate, inventory age, inventory turnover, and low inventory detection.
+
+---
+
+Key KPIs and Insights
+
+Stockout Rate
+
+* Products such as  P0016 (Clothing)  experienced stockouts in  \~18%  of inventory records.
+* This indicates demand is often unmet, potentially leading to revenue loss and customer dissatisfaction.
+
+Inventory Age
+
+* Several products in categories like  Toys  and  Electronics  showed an inventory age exceeding  20 days , highlighting slow movement and potential overstocking.
+* Product  P0031  had high inventory age and low turnover, suggesting review of its stocking strategy.
+
+Inventory Turnover
+
+* The average turnover ratio across stores was  2.3 , with best-performing items exceeding  4.0 .
+* Lower turnover (<1.5) was noted in Electronics and Winter seasonal items, indicating capital lock-up.
+
+Reorder Point Alerts
+
+* Using a 3-day lead time and 30-day average sales trend,  12+ products  were flagged for restocking.
+* This included fast-moving SKUs such as  P0096 (Toys)  and  P0159 (Electronics) , ensuring timely replenishment and avoiding stockouts.
+
+---
+Recommendations
+
+1.  Implement Dynamic Reordering 
+   Use trend-based reorder points to auto-trigger restocking when stock drops below threshold.
+
+2.  Reallocate Overstocked Inventory 
+   Shift slow-moving items from stores with high inventory age to regions with greater demand.
+
+3.  Prioritize High Turnover Items 
+   Allocate more shelf space and reorder budget to products with turnover > 3.5.
+
+4.  Address Frequent Stockouts 
+   Increase buffer/safety stock for high-demand items like  P0016  and adjust supplier frequency.
+
+---
+
+Outcome & Deliverables
+
+SQL Scripts : Complete set of analytics queries
+ER Diagram : Normalized schema for Product, Store, Inventory, and Dates
+KPI Dashboard : CSV-based reports on key metrics
+Insights Report : This executive summary for strategic decision-making
+
+---
+
+Conclusion
+
+This project demonstrates how data-driven inventory management using SQL and pandas can reduce inefficiencies, improve service levels, and inform stocking strategies. With minimal automation, retail businesses can proactively manage inventory across stores and regions.
+
